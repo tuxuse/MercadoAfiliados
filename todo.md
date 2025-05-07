@@ -1,0 +1,52 @@
+# Plano de Desenvolvimento: Site de Afiliados Mercado Livre - Página Inicial
+
+## Fase 1: Implementação do Design da Página Inicial
+
+- [ ] **Configuração Inicial e Limpeza:**
+    - [x] Remover conteúdo padrão do template React.
+- [x] **Estrutura HTML (JSX) da Página Inicial (`page.tsx`):
+    - [x] Criar componente Header.
+        - [x] Adicionar espaço reservado para o logo.
+        - [ ] (Opcional) Adicionar barra de navegação simples (inspirada no ML, como Categorias, Ofertas, etc., se o usuário aprovar posteriormente).
+    - [x] Criar seção "Sobre o Site".
+        - [x] Adicionar parágrafo para o "breve texto sobre o propósito do site".
+    - [x] Criar seção "Produtos em Destaque" (grade de produtos).
+        - [x] Implementar layout em grade.
+        - [x] Criar componente `ProductCard`.
+            - [x] Espaço para imagem do produto.
+            - [x] Nome do produto.
+            - [x] Preço do produto.
+            - [x] Botão "Ver detalhes" ou "Comprar".
+    - [x] Criar componente Footer.
+        - [x] Incluir informações básicas (ex: copyright, links úteis se houver, inspirado no rodapé da Thesus).
+- [x] **Estilização com Tailwind CSS:**
+    - [x] Aplicar paleta de cores do Mercado Livre:
+        - Amarelo principal (botões, destaques): `bg-[#FFF159]`.
+        - Cinzas (texto, fundos secundários): `bg-gray-100`, `bg-gray-200`, `text-gray-600`, `text-gray-800`.
+        - Preto (texto): `text-black`.
+        - Branco (fundo principal, texto): `bg-white`, `text-white`.
+    - [x] Estilizar Header:
+        - Fundo (provavelmente branco ou cinza claro, com barra amarela superior como no ML).
+        - Alinhamento do logo e navegação.
+    - [x] Estilizar seção "Sobre o Site":
+        - Tipografia, espaçamento.
+    - [x] Estilizar seção "Produtos em Destaque":
+        - Layout da grade (responsivo, ex: `grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4`).
+    - [x] Estilizar `ProductCard`:
+        - Bordas (`border border-gray-200`), sombras (`shadow-md`).
+        - Estilo da imagem (`aspect-square object-cover`).
+        - Tipografia para nome e preço.
+        - Estilizar botão:
+            - Fundo amarelo (`bg-[#FFF159]`).
+            - Texto preto (`text-black`).
+            - Efeito hover (ex: `hover:bg-yellow-400`).
+            - Padding e bordas arredondadas (`py-2 px-4 rounded-md`).
+    - [x] Estilizar Footer:
+        - Fundo (cinza escuro ou preto, como referência Thesus, mas adaptado).
+        - Cor do texto (branco ou cinza claro).
+- [x] **Conteúdo de Exemplo (Placeholders):**
+    - [x] Adicionar texto placeholder para "Sobre o Site".
+    - [x] Adicionar 3-4 `ProductCard`s com dados de exemplo (imagens placeholder de https://via.placeholder.com/, nomes, preços).
+- [x] **Revisão e Ajustes Iniciais:**
+    - [x] Verificar responsividade básica em diferentes tamanhos de tela.
+    - [x] Garantir consistência visual e aderência aos requisitos.
